@@ -1,6 +1,6 @@
-#!/bin/bash
+g#!/bin/bash
 
-NOTEBOOK_DIR=/root/analysis
+NOTEBOOK_DIR=/notebooks
 source activate mlhep-2016
 
 if [ -n "$JPY_API_TOKEN" ] ; then

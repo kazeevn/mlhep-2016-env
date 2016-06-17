@@ -6,4 +6,4 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 docker build -t mlhep-2016 $DIR
-docker run -it -p 127.0.0.1:8888:8888 -v "$DIR":/root/analysis mlhep-2016
+docker run -it -p 127.0.0.1:8888:8888 -v "$DIR":/root/analysis mlhep-2016 $1
