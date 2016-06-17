@@ -1,6 +1,5 @@
 #!/bin/bash
 
-NOTEBOOK_DIR=/notebooks
 source activate mlhep-2016
 
 if [ -n "$JPY_API_TOKEN" ] ; then
@@ -12,7 +11,8 @@ jupyterhub-singleuser \
   --base-url=$JPY_BASE_URL \
   --hub-prefix=$JPY_HUB_PREFIX \
   --hub-api-url=$JPY_HUB_API_URL \
-  --notebook-dir=$NOTEBOOK_DIR
+  --notebook-dir=$JPY_WORKDIR
 else
+NOTEBOOK_DIR=/notebooks
 jupyter notebook --no-browser --ip=0.0.0.0 --notebook-dir=$NOTEBOOK_DIR
 fi
