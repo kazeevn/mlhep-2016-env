@@ -1,4 +1,4 @@
-name: rep_py2
+name: mlhep-2016
 dependencies:
 - jupyter=1.0.0=py35_1
 - jupyter_client=4.2.2=py35_0
