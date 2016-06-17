@@ -1,4 +1,4 @@
-g#!/bin/bash
+#!/bin/bash
 
 NOTEBOOK_DIR=/notebooks
 source activate mlhep-2016
