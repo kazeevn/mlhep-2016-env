@@ -3,6 +3,7 @@
 source activate mlhep-2016
 
 if [ -n "$JPY_API_TOKEN" ] ; then
+mkdir -p $JPY_WORKDIR
 jupyterhub-singleuser \
   --port=8888 \
   --ip=0.0.0.0 \
