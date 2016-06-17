@@ -6,6 +6,8 @@ RUN apt-get install -y pkg-config libfreetype6-dev
 
 COPY environment.yml /environment.yml
 RUN conda env create -f /environment.yml
+COPY install_RISE.sh /tmp/install_RISE.sh
+RUN /tmp/install_RISE.sh
 
 COPY start.sh /root/start.sh
 EXPOSE 8888
